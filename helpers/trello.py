@@ -17,7 +17,7 @@ MONGODB_ATLAS_PASSWORD = os.environ.get("MONGODB_ATLAS_PASSWORD")
 MONGODB_ATLAS_URL = os.environ.get("MONGODB_ATLAS_URL")
 MONGODB_ATLAS_DATABASE = os.environ.get("MONGODB_ATLAS_DATABASE")
 
-board_id = '5f5dd769d2587924d54ae999'
+board_id = '622e30c2521ef10a8b9beb38'
 trello_card_collection_name = 'trellocards'
 
 def get_trello_lists():

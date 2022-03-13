@@ -5,7 +5,6 @@ import time
 from dotenv import load_dotenv
 
 from modules.utils import *
-from helpers.health_check import *
 from helpers.trello import check_cards_update
 
 load_dotenv()
@@ -35,7 +34,6 @@ def main():
 
     # Scheduled tasks
     j = updater.job_queue
-    j.run_once(server_health_check, 1)
     j.run_once(check_cards_update, 1)
 
     # Start the Bot
